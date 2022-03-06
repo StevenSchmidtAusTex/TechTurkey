@@ -11,7 +11,7 @@
 
 <body>
   <div class="flex-column justify-space-around">
-    <header class="justify-space-between align-center p-2">
+    <header class="justify-space-between align-center p-2 mainBack">
       <nav>
         <a href="/">Home</a>
         {{#if logged_in}}
@@ -24,21 +24,20 @@
       <h1>
         <span role="img" aria-label="Terry the Turkey">🦃</span>
         <a href="/">Tech Turkey!</a>
+        <p>Your favorite Turkey-Themed blogging site.</p>
       </h1>
     </header>
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
+    <main class="container container-fluid mt-5 textField">
       {{{ body }}}
     </main>
     <footer>
       
     </footer>
   </div>
-<audio controls autoplay>
-  <source src="thegobbler.mp3" type="audio/mpeg">
+{{!-- <audio controls autoplay muted>
+  <source src="/thegobbler.mp3" type="audio/mpeg">
   Your browser does not support the turkey gobble audio.
-  </audio>
-  <!-- Render script for logged in users only -->
+  </audio> --}}
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}

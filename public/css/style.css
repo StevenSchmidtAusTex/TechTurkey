@@ -1,5 +1,16 @@
 header, .blog:not(:last-child) {
   border-bottom: 1px solid #ccc;
+  color: white;
+}
+
+.textField {
+  background-color: white;
+  color: black;
+}
+
+.mainBack {
+  background-color: rgb(35, 16, 16);
+  color: white;
 }
 
 .no-button {
